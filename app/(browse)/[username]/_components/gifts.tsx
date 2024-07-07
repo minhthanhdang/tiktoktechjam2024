@@ -28,6 +28,7 @@ export const Gifts = ({
           <div 
             className="text-[24px] w-[64px] h-[64px] bg-white hover:bg-gray-200 flex items-center justify-center rounded-full"
             onClick={() => onClick(gift)}
+            key={gift.id}
           >
             <img className="relative w-[80%] h-[80%]" src={gift.imageUrl} />
           </div>
