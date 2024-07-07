@@ -13,7 +13,8 @@ const Home = async () =>  {
         </div>
         <div className="ps-16">
         {users.map((user) => (
-          <div>
+          <div 
+            key={user.id}>
             <UserItem 
               username={user.username}
               imageUrl={user.imageUrl}
